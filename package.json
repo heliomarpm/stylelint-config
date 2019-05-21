@@ -16,7 +16,8 @@
 	"license": "MIT",
 	"scripts": {
 		"format": "prettier --ignore-path .gitignore --write",
-		"lint": "eslint"
+		"lint": "eslint",
+		"release": "np"
 	},
 	"dependencies": {
 		"stylelint-config-rational-order": "^0.1.2",
@@ -32,6 +33,7 @@
 		"eslint-plugin-import": "^2.17.2",
 		"husky": "^2.2.0",
 		"lint-staged": "^8.1.6",
+		"np": "^5.0.2",
 		"prettier": "^1.17.0",
 		"stylelint": "^10.0.1"
 	},
