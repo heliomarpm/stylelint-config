@@ -13,8 +13,7 @@ The configuration is compatible with [Prettier](https://github.com/prettier/pret
 1. Install the required packages:
 
 ```sh
-yarn add --dev stylelint
-yarn add --dev --tilde @samuelmeuli/stylelint-config
+yarn add --dev stylelint @samuelmeuli/stylelint-config
 ```
 
 2. Create a `.stylelintrc.yml` file with the following content in your project root:
