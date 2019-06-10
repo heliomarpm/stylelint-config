@@ -27,8 +27,8 @@ extends: "@samuelmeuli/stylelint-config"
 ```json
 {
   "scripts": {
-    "lint:css": "stylelint --fix src/**/*.css",
-    "lint:scss": "stylelint --fix --syntax scss src/**/*.scss"
+    "lint:css": "stylelint --fix --max-warnings 0 src/**/*.css",
+    "lint:scss": "stylelint --fix --max-warnings 0 --syntax scss src/**/*.scss"
   }
 }
 ```
