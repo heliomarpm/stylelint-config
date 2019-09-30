@@ -35,7 +35,7 @@
 	"devDependencies": {
 		"husky": "^3.0.7",
 		"lint-staged": "^9.4.0",
-		"np": "^5.0.2",
+		"np": "~5.0.0",
 		"prettier": "^1.17.0",
 		"stylelint": "^11.0.0"
 	},
