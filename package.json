@@ -10,50 +10,44 @@
 		"scss",
 		"lint"
 	],
-	"main": "index.js",
-	"author": "Samuel Meuli <me@samuelmeuli.com>",
+	"author": {
+		"name": "Samuel Meuli",
+		"email": "me@samuelmeuli.com",
+		"url": "https://samuelmeuli.com"
+	},
 	"repository": "github:samuelmeuli/stylelint-config",
 	"license": "MIT",
+	"files": [
+		"index.js"
+	],
+	"main": "index.js",
 	"scripts": {
-		"format": "prettier --ignore-path .gitignore --write",
-		"lint": "eslint",
-		"release": "np"
+		"format": "prettier --write",
+		"release": "np --no-tests"
 	},
 	"dependencies": {
 		"stylelint-config-rational-order": "^0.1.2",
 		"stylelint-config-sass-guidelines": "^6.0.0"
 	},
 	"peerDependencies": {
-		"stylelint": "^10.0.0"
+		"stylelint": "^11.0.0"
 	},
 	"devDependencies": {
-		"eslint": "5.16.0",
-		"eslint-config-airbnb-base": "13.1.0",
-		"eslint-config-prettier": "^4.2.0",
-		"eslint-plugin-import": "^2.17.2",
-		"husky": "^2.2.0",
-		"lint-staged": "^8.1.6",
+		"husky": "^3.0.7",
+		"lint-staged": "^9.4.0",
 		"np": "^5.0.2",
 		"prettier": "^1.17.0",
-		"stylelint": "^10.0.1"
+		"stylelint": "^11.0.0"
 	},
-	"files": [
-		"index.js"
-	],
+	"lint-staged": {
+		"*.{js,json,md,yml}": [
+			"yarn format",
+			"git add"
+		]
+	},
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged"
 		}
-	},
-	"lint-staged": {
-		"*.js": [
-			"yarn format",
-			"yarn lint",
-			"git add"
-		],
-		"*.{json,md,yml}": [
-			"yarn format",
-			"git add"
-		]
 	}
 }
