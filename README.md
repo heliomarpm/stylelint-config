@@ -16,10 +16,15 @@ The configuration is compatible with [Prettier](https://github.com/prettier/pret
 yarn add --dev stylelint @samuelmeuli/stylelint-config
 ```
 
-2. Create a `.stylelintrc.yml` file with the following content in your project root:
+2. Add a Stylelint configuration to your `package.json` file:
 
-```yml
-extends: "@samuelmeuli/stylelint-config"
+```js
+{
+  // ...
+  "stylelint": {
+    "extends": "@samuelmeuli/stylelint-config"
+  }
+}
 ```
 
 3. Add the linting script(s) you need to your `package.json` file:
