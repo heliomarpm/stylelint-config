@@ -26,6 +26,7 @@
 		"release": "np --no-tests"
 	},
 	"dependencies": {
+		"stylelint-config-prettier": "^8.0.0",
 		"stylelint-config-rational-order": "^0.1.2",
 		"stylelint-config-sass-guidelines": "^6.2.0"
 	},

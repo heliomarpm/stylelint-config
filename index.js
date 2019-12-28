@@ -4,12 +4,13 @@ module.exports = {
 		"stylelint-config-sass-guidelines",
 		// Config for enforcing property order
 		"stylelint-config-rational-order",
+		// Disable rules that might conflict with Prettier
+		"stylelint-config-prettier",
 	],
 
 	rules: {
 		// Rule overrides for stylelint-config-sass-guidelines
 		"color-hex-length": "long",
-		indentation: "tab",
 		"max-nesting-depth": null,
 		"order/properties-alphabetical-order": null,
 		"selector-no-qualifying-type": null,
@@ -19,7 +20,5 @@ module.exports = {
 		"font-family-name-quotes": "always-unless-keyword",
 		"font-weight-notation": "numeric",
 		"function-url-no-scheme-relative": true,
-		"selector-attribute-quotes": "always",
-		"string-quotes": "double",
 	},
 };
