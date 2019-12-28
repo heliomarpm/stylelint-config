@@ -18,12 +18,11 @@ yarn add --dev stylelint @samuelmeuli/stylelint-config
 
 2. Create the following entry in your `package.json` file:
 
-```js
+```json
 {
-  // ...
-  "stylelint": {
-    "extends": "@samuelmeuli/stylelint-config"
-  }
+	"stylelint": {
+		"extends": "@samuelmeuli/stylelint-config"
+	}
 }
 ```
 
