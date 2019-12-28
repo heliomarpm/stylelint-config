@@ -6,7 +6,7 @@ This is my personal configuration for [Stylelint](https://github.com/stylelint/s
 
 The rules are based on the [sass-guidelines](https://github.com/bjankord/stylelint-config-sass-guidelines) and [rational-order](https://github.com/constverum/stylelint-config-rational-order) configurations and include a couple of custom additions and deletions.
 
-The configuration is compatible with [Prettier](https://github.com/prettier/prettier) (if it's configured to use tabs for indentation).
+The configuration is designed to be used together with [Prettier](https://github.com/prettier/prettier).
 
 ## Usage
 
@@ -16,7 +16,7 @@ The configuration is compatible with [Prettier](https://github.com/prettier/pret
 yarn add --dev stylelint @samuelmeuli/stylelint-config
 ```
 
-2. Add a Stylelint configuration to your `package.json` file:
+2. Create the following entry in your `package.json` file:
 
 ```js
 {
@@ -27,13 +27,12 @@ yarn add --dev stylelint @samuelmeuli/stylelint-config
 }
 ```
 
-3. Add the linting script(s) you need to your `package.json` file:
+3. Add a linting script to your `package.json` file:
 
 ```json
 {
-  "scripts": {
-    "lint:css": "stylelint --fix --max-warnings 0 src/**/*.css",
-    "lint:scss": "stylelint --fix --max-warnings 0 --syntax scss src/**/*.scss"
-  }
+	"scripts": {
+		"lint": "stylelint --fix --max-warnings 0 '**/*.{css,sass,scss}'"
+	}
 }
 ```
